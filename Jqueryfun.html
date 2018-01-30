@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .header{
+        color:red;
+    }
+    #attr2{
+        background-color: green;
+    }
+    </style>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $("#hide").click(function(){
+            $(".p1").hide();
+        });
+        $("#show").click(function(){
+            $(".p1").show();
+        });
+        $("#toggle").click(function(){
+            $(".p1").toggle();
+        });
+        $("#slideup").click(function(){
+            $(".p2").slideUp();
+        });
+        $("#slidedown").click(function(){
+            $(".p2").slideDown();
+        });
+        $("#slidetoggle").click(function(){
+            $(".p2").slideToggle();
+        });
+        $("#fadein").click(function(){
+            $(".p3").fadeIn();
+        });
+        $("#fadeout").click(function(){
+            $(".p3").fadeOut();
+        });
+        $("#addclass").click(function(){
+            $("h1").addClass("header")
+        })
+        $("#before").click(function(){
+            $(".p5").before("Before the paragraph!")
+        })
+        $("#after").click(function(){
+            $(".p5").after("After the paragraph ends!")
+        })
+        $("#append").click(function(){
+            $(".p5").append("At the end of, but inside the paragraph tag!")
+        })
+        $("#html").click(function(){
+            $("h1").html("<h6>Not only the text, but the html changed as well!</h6>")
+        })
+        $("#attr").click(function(){
+            $("#attr").attr("id", "attr2" )
+        })
+        $("#val").click(function(){
+            $("input[type=text]").val("Value of form changes!")
+        })
+        $("#text").click(function(){
+            $(".p6").text("This text replaced the old text!!")
+        })
+        $("#data").click(function(){
+            $("")
+        })
+    })
+    </script>
+</head>
+<body>
+    <div class="one">
+        <h1>Hide/Show/Toggle</h1>
+        <button id="hide">Hide</button>
+        <button id="show">Show</button>
+        <button id="toggle">Toggle</button>
+        <p class="p1">Use the buttons to hide or show this text. Toggle will control both!</p>
+    </div>
+    <div class="two">
+        <h1>Slide Up/Down/Toggle</h1>
+        <button id="slideup">Slide Up</button>
+        <button id="slidedown">Slide Down</button>
+        <button id="slidetoggle">Slide Toggle</button>
+        <p class="p2">Use these buttons to hide, show, or toggle this text. Notice the different effects than above!</p>
+    </div>
+    <div class="three">
+        <h1>Fade In/Out</h1>
+        <button id="fadein">Fade In</button>
+        <button id="fadeout">Fade Out</button>
+        <p class="p3">Use these buttons to cause the text to fade!</p>
+    </div>
+    <div class="four">
+        <h1>Add Class</h1>
+        <button id="addclass">Add Class</button>
+        <p class="p4">Use this button to change all header colors to Red!</p>
+    </div>
+    <div class="five">
+        <h1>Adding Content</h1>
+        <button id="before">Before</button>
+        <button id="after">After</button>
+        <button id="append">Append</button>
+        <p class="p5">Use these buttons to insert text into the paragraph. Note where the additions take place!</p>
+    </div>
+    <div class="six">
+        <button id="html">Change Headers!</button>
+        <button id="attr">Attribute</button>
+        <button id="val">Val</button>
+        <input type=text placeholder="Placeholding Text here">
+        <button id="text">Text</button>
+        <p class="p6">The text button will modify the text in this paragraph!</p>
+        <button id="data">Data</button>
+    </div>
+</body>
+</html>
