@@ -1,0 +1,24 @@
+*{
+    margin:0px;
+    padding:0;
+    border:0;
+}
+.background{
+    background-color: deepskyblue;
+    width: 500px;
+    height: 500px;
+    margin: 175px 0px 0px 375px;
+    border: black solid 5px;
+}
+.background h1{
+    color: orangered;
+    border-bottom: black double 10px;
+    padding-left: 175px;
+}
+.background h2{
+    color: orangered;
+    padding-left: 200px;
+    margin-top: 200px;
+    border-top: black solid 2px;
+    border-bottom: black solid 2px;
+}
