@@ -1,0 +1,15 @@
+*{
+    margin:0px;
+    padding:0;
+    border:0;
+    margin-bottom: 10px;
+  
+}
+.background{
+    height:auto;
+    background-color: cadetblue;
+    color:darkred;
+}
+.background h1{
+    color: darkmagenta;
+}
