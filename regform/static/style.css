@@ -1,0 +1,29 @@
+*{
+    margin:0px;
+    padding:0;
+    border:0;
+    margin-bottom: 10px;
+  
+}
+
+.background{
+    background-color: silver;
+    height: 500px;
+    width: 500px;
+    margin: 100px 0px 0px 200px;
+}
+.background h1{
+    border-bottom: black 2px solid;
+    padding-left: 100px;
+}
+.background form{
+    margin:10px;
+}
+.background input{
+    background-color: crimson;
+    padding: 5px 25px 5px 25px;
+    border: solid black 2px;
+}
+#button{
+    margin: 50px 10px 10px 150px;
+}
