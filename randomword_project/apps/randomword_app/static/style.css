@@ -1,0 +1,13 @@
+#background h1{
+    border: solid black 2px;
+    height: 45px;
+    text-align: center;
+}
+#background form{
+    display:inline-block;
+}
+#background input{
+    display: inline-block;
+    padding: 20px;
+
+}

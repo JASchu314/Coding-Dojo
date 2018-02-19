@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href='{% static "style.css" %}' />
+    <title>Random Word Generator</title>
+</head>
+<body>
+    <div id='background'>
+        <h2>Random Word (attempt #{{request.session.number}})</h2>
+    
+        <form action="/word" method='post'>
+            {% csrf_token %}
+            <h2>Here is your Randomly Generated Word:</h2>
+            <h1>{{request.session.randomword}}</h1>
+            <input type="submit" value="Generate">
+        </form>
+        <form action='/reset' method='post'>
+            {% csrf_token %}
+            <input type='submit' value='Reset Game'>
+        </form>
+    </form>
+    </div>
+</body>
+</html>
